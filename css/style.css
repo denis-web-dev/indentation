@@ -1,0 +1,49 @@
+.none {
+	display: none;
+}
+
+.header {
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.header__title {
+	font-size: 60px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.text {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.2;
+	text-align: left;
+
+	margin-bottom: 30px;
+}
+
+.text:last-child {
+	margin-bottom: 0;
+}
+
+.content {
+	background: #f1f1f1;
+	border-radius: 10px;
+	padding: 25px 0 25px 15px;
+	margin-bottom: 40px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 1.2;
+
+	margin-bottom: 20px;
+}
+
+.items {
+	margin-bottom: 10px;
+}
+.items:last-child {
+	margin-bottom: 0;
+}
