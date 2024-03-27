@@ -10,8 +10,8 @@
 
 <body>
   <article>
-    <section class="header">
-      <div class="container">
+    <div class="wrapper">
+      <section class="header">
         <h1 class="header__title">Отступы в вёрстке: margin и padding</h1>
         <p class="header__text text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения
           смысла и
@@ -22,34 +22,33 @@
           если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода
           продолжат
           нормально работать.</p>
-        <p class="header__text text">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за
+        <p class="header__text text">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти
+          за
           их
           пределы. Эти знания особенно
-          важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим
+          важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак,
+          поговорим
           о
           фундаментальных основах работы с отступами в вёрстке.</p>
-      </div>
-    </section>
+      </section>
 
-    <section class="content">
-      <div class="container">
+      <section class="content">
         <h2 class="content__title title">Содержание:</h2>
         <ol class="content__list">
           <li class="content__item items">
-            <a class="content__link" href="#">1. Отступ задается от предыдущего элемента к следующему</a>
+            <a class="content__link" href="#indent-one">1. Отступ задается от предыдущего элемента к следующему</a>
           </li>
           <li class="content__item items">
-            <a class="content__link" href="#">2. Отступ задается последнему возможному элементу в DOM-дереве</a>
+            <a class="content__link" href="#indent-two">2. Отступ задается последнему возможному элементу в
+              DOM-дереве</a>
           </li>
           <li class="content__item items">
-            <a class="content__link" href="#">3. Для последнего элемента группы отступ обнуляется</a>
+            <a class="content__link" href="#indent-three">3. Для последнего элемента группы отступ обнуляется</a>
           </li>
         </ol>
-      </div>
-    </section>
+      </section>
 
-    <section class="indent-one" id="indent-one">
-      <div class="container">
+      <section class="indent-one" id="indent-one">
         <div class="indent-one__title indent-title">Отступ задается от предыдущего элемента к следующему: от первого
           ко второму,
           сверху вниз, слева направо.</div>
@@ -60,7 +59,8 @@
             <p class="indent-one__block-top--description text">ВАЖНО: <span>margin</span> всегда задают от предыдущего
               элемента к
               следующему.</p>
-            <p class="indent-one__block-top--description text">Свойство <span>margin</span> необходимо только для того,
+            <p class="indent-one__block-top--description text">Свойство <span>margin</span> необходимо только для
+              того,
               чтобы
               отодвинуть своего соседа справа или снизу, поэтому
               используется
@@ -68,7 +68,8 @@
             </p>
             <p class="indent-one__block-top--description text">(!) Свойства <span>margin-left</span> и
               <span>margin-top</span> используются
-              крайне редко.</p>
+              крайне редко.
+            </p>
             <p class="indent-one__block-top--description text">Для <span>padding</span> верно обратное. Исключением
               является его
               применения в декоративных целях, например, для
@@ -92,11 +93,9 @@
               родителя.</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="indent-two" id="indent-two">
-      <div class="container">
+      <section class="indent-two" id="indent-two">
         <h2 class="indent-two__title indent-title">Отступ задается последнему возможному элементу в DOM-дереве</h2>
         <p class="indent-two__text text">Вообще, <span>margin</span> задают исключительно между соседними элементами
           DOM-дерева.
@@ -106,7 +105,8 @@
         <img class="indent-two__img" src="./img/indent-two-2.jpg" alt="Изображен список DOM-дерева">
         <p class="indent-two__text text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
         <img class="indent-two__img" src="/img/indent-two-3.jpg" alt="Изображен список DOM-дерева">
-        <p class="indent-two__text text">Казалось бы, можно задать отступ параграфу <span>&lt;p&gt;</span>, либо обёртке
+        <p class="indent-two__text text">Казалось бы, можно задать отступ параграфу <span>&lt;p&gt;</span>, либо
+          обёртке
           <span>&lt;article&gt;</span> для достижения той же цели. Внешне останется все точно также, но так делать не
           рекомендуется.
         </p>
@@ -126,18 +126,17 @@
           кто будет верстать после вас. Кроме
           того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной
           структурой отступов.</p>
-      </div>
-    </section>
+      </section>
 
-    <section class="indent-three">
-      <div class="container">
+      <section class="indent-three" id="indent-three">
         <h2 class="indent-three__title indent-title">Для последнего элемента группы отступ всегда обнуляется</h2>
         <p class="indent-three__text text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
         <p class="indent-three__text text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего
           блока
           расстояние такое же.</p>
         <img class="indent-three__img" src="./img/indent-three-1.jpg" alt="Изображен список DOM-дерева">
-        <p class="indent-three__text text">В соответствии со вторым принципом: последний <span>margin</span> обнуляется,
+        <p class="indent-three__text text">В соответствии со вторым принципом: последний <span>margin</span>
+          обнуляется,
           а нижний
           отступ
           задаётся через <span>padding</span> для <span>section</span>. Я
@@ -160,11 +159,9 @@
         <p class="indent-three__text text">Советую использовать псевдоклассы :last-child чаще других, например так:
         </p>
         <img class="indent-three__img" src="./img/indent-three-7.jpg" alt="Изображен отступ">
-      </div>
-    </section>
+      </section>
 
-    <section class="sum-up">
-      <div class="container">
+      <section class="sum-up">
         <h2 class="sum-up__title title">Подытожим:</h2>
         <ul class="sum-up__list">
           <li class="sum-up__item items">
@@ -196,9 +193,8 @@
         <p class="sum-up__text text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые
           принципы приходится нарушать в угоду
           дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
-      </div>
-    </section>
-
+      </section>
+    </div>
   </article>
 </body>
 

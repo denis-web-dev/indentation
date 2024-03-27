@@ -1,5 +1,7 @@
-.none {
-	display: none;
+.wrapper {
+	max-width: 1140px;
+	padding: 0 30px;
+	margin: 0 auto;
 }
 
 .header {
@@ -27,9 +29,10 @@
 }
 
 .content {
+	max-width: 1140px;
 	background: #f1f1f1;
 	border-radius: 10px;
-	padding: 25px 0 25px 15px;
+	padding: 25px 0 25px 45px;
 	margin-bottom: 40px;
 }
 
