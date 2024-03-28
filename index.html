@@ -10,8 +10,8 @@
 
 <body>
   <article>
-    <div class="wrapper">
-      <section class="header">
+    <section class="header">
+      <div class="container">
         <h1 class="header__title">Отступы в вёрстке: margin и padding</h1>
         <p class="header__text text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения
           смысла и
@@ -30,25 +30,31 @@
           поговорим
           о
           фундаментальных основах работы с отступами в вёрстке.</p>
-      </section>
+      </div>
+    </section>
 
+    <div class="inner">
       <section class="content">
-        <h2 class="content__title title">Содержание:</h2>
-        <ol class="content__list">
-          <li class="content__item items">
-            <a class="content__link" href="#indent-one">1. Отступ задается от предыдущего элемента к следующему</a>
-          </li>
-          <li class="content__item items">
-            <a class="content__link" href="#indent-two">2. Отступ задается последнему возможному элементу в
-              DOM-дереве</a>
-          </li>
-          <li class="content__item items">
-            <a class="content__link" href="#indent-three">3. Для последнего элемента группы отступ обнуляется</a>
-          </li>
-        </ol>
+        <div class="container">
+          <h2 class="content__title title">Содержание:</h2>
+          <ol class="content__list">
+            <li class="content__item items">
+              <a class="content__link" href="#indent-one">Отступ задается от предыдущего элемента к следующему</a>
+            </li>
+            <li class="content__item items">
+              <a class="content__link" href="#indent-two">Отступ задается последнему возможному элементу в
+                DOM-дереве</a>
+            </li>
+            <li class="content__item items">
+              <a class="content__link" href="#indent-three">Для последнего элемента группы отступ обнуляется</a>
+            </li>
+          </ol>
+        </div>
       </section>
+    </div>
 
-      <section class="indent-one" id="indent-one">
+    <section class="indent-one" id="indent-one">
+      <div class="container">
         <h2 class="indent-one__title indent-title">Отступ задается от предыдущего элемента к следующему: от первого
           ко второму,
           сверху вниз, слева направо.</h2>
@@ -93,9 +99,11 @@
               родителя.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="indent-two" id="indent-two">
+    <section class="indent-two" id="indent-two">
+      <div class="container">
         <h2 class="indent-two__title indent-title">Отступ задается последнему возможному элементу в DOM-дереве</h2>
         <p class="indent-two__text text">Вообще, <span>margin</span> задают исключительно между соседними элементами
           DOM-дерева.
@@ -126,9 +134,11 @@
           кто будет верстать после вас. Кроме
           того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной
           структурой отступов.</p>
-      </section>
+      </div>
+    </section>
 
-      <section class="indent-three" id="indent-three">
+    <section class="indent-three" id="indent-three">
+      <div class="container">
         <h2 class="indent-three__title indent-title">Для последнего элемента группы отступ всегда обнуляется</h2>
         <p class="indent-three__text text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
         <p class="indent-three__text text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего
@@ -159,40 +169,44 @@
         <p class="indent-three__text text">Советую использовать псевдоклассы :last-child чаще других, например так:
         </p>
         <img class="indent-three__img" src="./img/indent-three-7.jpg" alt="Изображен отступ">
-      </section>
+      </div>
+    </section>
 
+    <div class="inner">
       <section class="sum-up">
-        <h2 class="sum-up__title title">Подытожим:</h2>
-        <ul class="sum-up__list">
-          <li class="sum-up__item items">
-            <a class="sum-up__link" href="#">
-              — отступы задаём от предыдущего элемента к следующему
-            </a>
-          </li>
-          <li class="sum-up__item items">
-            <a class="sum-up__link" href="#">
-              — используем только margin-right и margin-bottom
-            </a>
-          </li>
-          <li class="sum-up__item items">
-            <a class="sum-up__link" href="#">
-              — внешние отступы задаются только между соседями
-            </a>
-          </li>
-          <li class="sum-up__item items">
-            <a class="sum-up__link" href="#">
-              — внутренний отступ задаём самому верхнему элементу в дом дереве
-            </a>
-          </li>
-          <li class="sum-up__item items">
-            <a class="sum-up__link" href="#">
-              — последнему элементу группы отступ всегда обнуляем
-            </a>
-          </li>
-        </ul>
-        <p class="sum-up__text text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые
-          принципы приходится нарушать в угоду
-          дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
+        <div class="container">
+          <h2 class="sum-up__title title">Подытожим:</h2>
+          <ul class="sum-up__list">
+            <li class="sum-up__item items">
+              <a class="sum-up__link" href="#">
+                — отступы задаём от предыдущего элемента к следующему
+              </a>
+            </li>
+            <li class="sum-up__item items">
+              <a class="sum-up__link" href="#">
+                — используем только margin-right и margin-bottom
+              </a>
+            </li>
+            <li class="sum-up__item items">
+              <a class="sum-up__link" href="#">
+                — внешние отступы задаются только между соседями
+              </a>
+            </li>
+            <li class="sum-up__item items">
+              <a class="sum-up__link" href="#">
+                — внутренний отступ задаём самому верхнему элементу в дом дереве
+              </a>
+            </li>
+            <li class="sum-up__item items">
+              <a class="sum-up__link" href="#">
+                — последнему элементу группы отступ всегда обнуляем
+              </a>
+            </li>
+          </ul>
+          <p class="sum-up__text text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые
+            принципы приходится нарушать в угоду
+            дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
+        </div>
       </section>
     </div>
   </article>
