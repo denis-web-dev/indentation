@@ -1,0 +1,37 @@
+.inner {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.content {
+	max-width: 1140px;
+	background: #f1f1f1;
+	border-radius: 10px;
+	padding: 25px 0 25px 15px;
+	margin-bottom: 40px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 1.2;
+
+	margin-bottom: 20px;
+}
+
+.content__list {
+	list-style: auto;
+	color: #02535f;
+	padding-left: 25px;
+}
+
+.content__link {
+	border-bottom: 1px solid #000;
+}
+
+.items {
+	margin-bottom: 10px;
+}
+.items:last-child {
+	margin-bottom: 0;
+}
