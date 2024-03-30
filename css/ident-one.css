@@ -37,6 +37,20 @@ span {
 	padding-bottom: 25px;
 }
 
+.indent-two__block {
+	border: 1px solid #000;
+	margin-bottom: 30px;
+}
+
+.indent-two__block--text {
+	padding: 15px 30px;
+	color: #5e5e5e;
+}
+
+.indent-two__block--img {
+	margin-bottom: 0;
+}
+
 .indent-two__img {
 	display: block;
 	margin: auto;
